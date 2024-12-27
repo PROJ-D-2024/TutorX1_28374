@@ -1,0 +1,10 @@
+version: '3'
+services:
+  airflow:
+    image: apache/airflow:latest
+    environment:
+      - AIRFLOW_HOME=/usr/local/airflow
+    volumes:
+      - ./data:/data
+      - ./dags:/usr/local/airflow/dags
+      - ./plugins:/usr/local/airflow/plugins
