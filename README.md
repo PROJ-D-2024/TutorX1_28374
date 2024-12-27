@@ -23,6 +23,28 @@ This project implements two Data Pipelines (DAGs) using Apache Airflow:
 ### DAGs Overview
 Both DAGs are designed with modular, reusable operators and clear documentation for easy understanding and extension.
 
----
-
 ### Project Structure
+
+project/
+├── dags/
+│   ├── dag1_download_split.py   # Handles data download and splitting
+│   └── dag2_process_data.py     # Handles data cleaning and processing
+├── requirements.txt             # Lists all Python dependencies
+├── docker-compose.yaml          # Configuration for running Airflow with Docker
+└── credentials.json             # Google Sheets credentials (for illustration)
+
+
+### Usage
+
+To run the project:
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+2. Start Airflow:
+   docker-compose up -d
+3. Access the Airflow UI:
+   Open your browser and go to http://localhost:8080.
+   Trigger the DAGs manually from the Airflow UI.
+
+
