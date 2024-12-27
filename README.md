@@ -78,6 +78,11 @@ Here’s a simple guide to setting up and running this project:
 
 ---
 
+# NOTE: The file 'credentials.json' is required for authenticating with Google Sheets API.
+# This is a placeholder file for demonstration purposes in the scope of this assignment.
+
+---
+
 ### Why This Project is Useful
 
 This project is not just an example but also a demonstration of best practices in data engineering. It can be a valuable reference for:
